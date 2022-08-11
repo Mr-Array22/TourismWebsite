@@ -1,0 +1,168 @@
+
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+
+
+
+html {
+    scroll-behavior:smooth;
+    background-color:white;
+}
+header{
+	background-color: #c8e4e6d7
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding: 20px;
+    
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    width: 60px;
+    width: 90px;
+    margin-top: -12px;
+}
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .links:hover ul {
+    display: block;
+    
+}
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: var(--main-duration);
+}
+.header .links ul li a:hover {
+padding-left: 25px;
+color: aqua;
+}
+.header .links ul li:not(:last-child) a {
+border-bottom: 1px solid #ddd;
+}
+
+.h1{
+	margin-top:50px;
+	
+}
+.head1{
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align:justify;
+	line-height: 1.6em;
+	padding: 20px;
+	font-size: 30;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:mediumturquoise;
+}
+a:active{
+	color:violet;
+}
+.vid{
+	margin-left: 20px;
+	margin-right: 30px;
+}
+.content{
+	margin-right: 30px;
+	margin-left: 20px;
+	font-size: 20;
+	text-align:justify;
+	line-height: 1.6em;
+	padding: 20px;  
+    transform: translate(-15px,0px);
+}
+
+.table{
+	width: 75%;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	align-content:space-between;
+	line-height: 1.6em;
+	text-align: justify;
+}
+.table td{
+	border-bottom: solid;
+	padding: 20px;
+}
+
+
+
+

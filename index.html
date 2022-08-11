@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/touropia.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Css/all.min.css">
+    <title>TourOpia</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img  class="logo" src="images/logo8.png" alt="">
+            <h2 class="special-features"><i>Welcome to touropia</i></h2>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li><a onclick="myHome()" href="index.html">Home</a></li>
+                    <li><a onclick="myFeatures()" href="features.html">Features</a></li>
+                    <li><a onclick="myGallery()" href="gallery.html">Places</a></li>
+                    <li><a onclick="myAbout()" href="about.html">About Us</a></li>
+                    <li><a onclick="myContact()" href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form>
+        <input type="text" name="search" placeholder="Search..">
+    </form>
+    <video autoplay muted loop id="myVideo">
+        <source src="Video/home.mp4" type="video/mp4">
+        <source src="video/home.mp4" type="video/ogg">
+    </video>
+    <div class="content">
+        <h1>Tourism is awesome</h1>
+        <p>Welcome to our world, You will find your purpose here</p>
+        <button id="myButton" onclick="myFunction()">Pause</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

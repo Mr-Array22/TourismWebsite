@@ -1,0 +1,225 @@
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior:smooth;
+    background-color: #c8e4e6d7;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding: 20px;
+    
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    width: 60px;
+    width: 90px;
+    margin-top: -12px;
+    margin-left: 4px;
+}
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: var(--main-duration);
+}
+
+.header .links ul li a:hover {
+padding-left: 25px;
+color: aqua;
+}
+
+.header .links ul li:not(:last-child) a {
+border-bottom: 1px solid #ddd;
+}
+
+.special-heading{
+    color: #636567;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+    margin-top: -80px;
+    margin-left: 50px;
+}
+.special-paragraph{
+    color: #6d6f71;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+    
+}
+.recomnd{
+    color: rgb(108 110 113);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.about-heading.container.paragraph-container{
+    line-height: 2.7px;
+}
+
+img{
+    margin: 0px;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 2px;
+}
+img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    transition: .5s;
+    animation: shake-image 0.5s;
+}
+
+
+@keyframes shake-image {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.p1{
+    transform:translate(225px,-150px) ;
+    margin-right: 250px;
+}
+.p2{
+    transform:translate(225px,-150px) ;
+    margin-right: 250px;
+}
+.p3{
+    transform:translate(225px,-150px) ;
+    margin-right: 250px;
+}
+.p4{
+    transform:translate(225px,-150px) ;
+    margin-right: 250px;
+}
+.p5{
+    transform:translate(225px,-150px) ;
+    margin-right: 250px;
+}
+.links1{
+    margin-left: 360px;
+    transform: translate(10px, -180px);
+    
+}
+.links2{
+    margin-left: 360px;
+    transform: translate(10px, -180px);
+}
+.links3{
+    margin-left: 360px;
+    transform: translate(10px, -180px);
+}
+
+.links4{
+    margin-left: 360px;
+    transform: translate(10px, -180px);
+}
+.links5{
+    margin-left: 360px;
+    transform: translate(10px, -180px);
+}
+
+a{
+    text-decoration: none;
+}
